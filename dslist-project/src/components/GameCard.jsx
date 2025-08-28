@@ -13,7 +13,7 @@ export default function GameCard({game}) {
                 <div className={styles.content}>
                     <h2>{game.title}</h2>
                     <p>{game.shortDescription}</p>
-                    <p>{game.year}</p>
+                    <p className={styles.year}>{game.year}</p>
                 </div>
             </div>
             </Link>

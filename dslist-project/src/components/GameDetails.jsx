@@ -36,7 +36,6 @@ export default function GameDetails() {
     return (
         <>
             <div>
-                <button className="btn-back" onClick={() => navigate("/")}>&larr;</button>
                 <div className={styles.detailsContainer}>
                     <div className={styles.detailsHeader}>
                         <img className={styles.detailsImg} src={game.imgUrl} alt={game.title} />
