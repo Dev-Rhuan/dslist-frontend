@@ -1,4 +1,5 @@
 import styles from './GameCard.module.css'
+import { Link } from 'react-router-dom'
 
 export default function GameCard({game}) {
     console.log(game);
@@ -6,7 +7,8 @@ export default function GameCard({game}) {
 
     return (
         <>
-            <div className={styles.card}>
+            <Link to={`/games/${game.id}`}>
+                <div className={styles.card}>
                 <img src={game.imgUrl} alt={game.title}/>
                 <div className={styles.content}>
                     <h2>{game.title}</h2>
@@ -14,6 +16,7 @@ export default function GameCard({game}) {
                     <p>{game.year}</p>
                 </div>
             </div>
+            </Link>
         </>
     )
 }
