@@ -1,0 +1,29 @@
+.card {
+    background-color: white;
+    border-radius: 10px;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    gap: 20px;
+}
+
+.card img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.content{
+    color: black;
+}
+
+.content p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
