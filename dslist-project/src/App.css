@@ -9,3 +9,53 @@ body {
   width: 100%;
   max-width: 960px;
 }
+
+.btn-back {
+    background-color: none;
+    border: 1px solid #444;
+    color: #eee;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #333;
+    border-color: #555;
+}
+
+.btn-back:focus {
+    box-shadow: 0 0 0 3px rgba(70, 130, 180, 0.6);
+    border-color: #555;
+    outline: none;
+}
+
+.btn-category {
+    background-color: none;
+    border: 1px solid #444;
+    color: #eee;
+
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-category:hover {
+    background-color: #333;
+    border-color: #555;
+}
+
+.btn-category:focus {
+    box-shadow: 0 0 0 3px rgba(70, 130, 180, 0.6);
+    border-color: #555;
+    outline: none;
+}

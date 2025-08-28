@@ -13,8 +13,12 @@ export default function GameLists() {
 
     return (
         <>
-        <h2>Minhas coleções</h2>
-        {selectedList === null ? (lists.map(list => (<button key={list.id} onClick={() => setSelectedList(list.id)}>{list.name}</button>))
-        ) : (<GamesInList listId={selectedList}/>)}
+        {selectedList === null ? (lists.map(list => (<button className="btn-category" key={list.id} onClick={() => setSelectedList(list.id)}>{list.name}</button>))
+        ) : (
+            <>
+                <button className="btn-back" onClick={() => setSelectedList(null)}>&larr;</button>
+                <GamesInList listId={selectedList}/>
+            </>
+        )}
         </>
     )}
